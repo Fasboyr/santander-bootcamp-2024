@@ -12,7 +12,6 @@ classDiagram
         -String password
         -String address
         -Order[] orders
-        -Review[] reviews
     }
 
     class Product {
@@ -34,15 +33,8 @@ classDiagram
         -String status
     }
 
-    class Review {
-        -Product product
-        -Number rating
-        -String comment
-    }
 
     User "1" *-- "N" Order
-    User "1" *-- "N" Review
     Product "1" *-- "1" Category
     Order "N" *-- "N" Product
-    Review "1" *-- "1" Product
 ```

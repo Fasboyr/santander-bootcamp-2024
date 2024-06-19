@@ -1,5 +1,5 @@
 # Java BootCamp Santandar 2024
-Java RESTful API criada para o Java BootCamp Santandar 2024
+Java RESTful API criada para o Java BootCamp Santander 2024
 
 ## Diagrama de classes
 

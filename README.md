@@ -12,6 +12,7 @@ classDiagram
         -String password
         -String address
         -Order[] orders
+        -Review[] reviews
     }
 
     class Product {
@@ -28,22 +29,20 @@ classDiagram
     }
 
     class Order {
-        -Date date
         -Number totalAmount
         -Product[] products
         -String status
     }
 
     class Review {
-        -User user
         -Product product
         -Number rating
         -String comment
     }
 
     User "1" *-- "N" Order
+    User "1" *-- "N" Review
     Product "1" *-- "1" Category
     Order "N" *-- "N" Product
-    Review "1" *-- "1" User
     Review "1" *-- "1" Product
 ```
